@@ -92,11 +92,13 @@ function Disco() {
 
 let interactionborder = document.querySelector('a:nth-of-type(6)')
 
-interactionborder.addEventListener('dblclick' , BorderSize)
+interactionborder.addEventListener('click' , BorderSize) 
 
 function BorderSize() {
 
-  interactionborder.classList.toggle('border-size') }
+  interactionborder.classList.toggle('border-size')
+
+  interactionborder.addEventListener('animationend', BorderSize) }
 
 // spinner and size
 
@@ -121,3 +123,15 @@ function CrazyCrazy() {
   interactioncrazy.classList.toggle('crazy-effect')
 
   interactioncrazy.addEventListener('animationend', CrazyCrazy) }
+
+// blur
+
+let interactionblur = document.querySelector('a:nth-of-type(9)')
+
+interactionblur.addEventListener('keyup' , BlurBlur) 
+
+function BlurBlur() {
+
+  interactionblur.classList.toggle('blur-effect')
+
+  interactionblur.addEventListener('animationend', BlurBlur) }

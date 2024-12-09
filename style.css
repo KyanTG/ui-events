@@ -208,10 +208,10 @@ a:nth-of-type(12) {
 
 
 .border-size {
-  animation-name: border-s;
+  animation-name: borderborder;
   animation-duration: 2s; }
 
-@keyframes border-s {
+@keyframes borderborder {
 
   5%, 15%, 25%, 35%, 45% { border: 10px var(--highlight-primary);}
 
@@ -252,3 +252,11 @@ a:nth-of-type(12) {
 
   80% { transform: rotateY(90deg) scale(5) translate(0px, 0px); background-color: red;} }
 
+.blur-effect {
+  animation-name: blurblur;
+  animation-duration: 2s; }
+
+@keyframes blurblur {
+
+  100% { filter: blur(0.1rem); color: black; background-color: white;}
+}
