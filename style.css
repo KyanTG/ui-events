@@ -206,3 +206,31 @@ a:nth-of-type(12) {
 
   50% { background-color: green; } }
 
+
+.border-size {
+  animation-name: border-s;
+  animation-duration: 2s; }
+
+@keyframes border-s {
+
+  5%, 15%, 25%, 35%, 45% { border: 10px var(--highlight-primary);}
+
+  10%, 20%, 30%, 40%, 50% { border: 20px var(--highlight-primary);} }
+
+.spinner-effect {
+  animation-name: spinnersize;
+  animation-duration: 3s; }
+
+@keyframes spinnersize {
+
+  0% { transform: rotateX(0deg);}
+
+  10% { transform: rotateX(180deg) scale(1.1) ;}
+
+  20% { transform: rotateX(320deg) scale(1.5);}
+
+  40% { transform: rotateX(500deg) scale(3);}
+
+  80% { transform: rotateX(0deg) scale(1); }
+
+}

@@ -92,10 +92,20 @@ function Disco() {
 
 let interactionborder = document.querySelector('a:nth-of-type(6)')
 
-interactionborder.addEventListener('dblclick , BorderSize')
+interactionborder.addEventListener('dblclick' , BorderSize)
 
 function BorderSize() {
 
-  interactionborder.classList.toggle('border-size')
+  interactionborder.classList.toggle('border-size') }
 
-  interactionborder.addEventListener('animationend', BorderSize) }
+// spinner and size
+
+let interactionspinner = document.querySelector('a:nth-of-type(7)')
+
+interactionspinner.addEventListener('click' , SizeSpinner) 
+
+function SizeSpinner() {
+
+  interactionspinner.classList.toggle('spinner-effect')
+
+  interactionspinner.addEventListener('animationend', SizeSpinner) }
