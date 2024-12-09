@@ -21,6 +21,7 @@ body {
   background: var(--secondary);
 }
 
+
 section {
   max-width: 90vw;
 }
@@ -259,4 +260,33 @@ a:nth-of-type(12) {
 @keyframes blurblur {
 
   100% { filter: blur(0.1rem); color: black; background-color: white;}
+}
+
+.body-effect {
+  animation-name: backgroundwhole;
+  animation-duration: 5s;
+}
+
+@keyframes backgroundwhole {
+  100% { background-color: white;}
+}
+
+.colors-effect {
+  animation-name: colors;
+  animation-duration: 1s; }
+
+@keyframes colors {
+
+  20% { border-color: red; color: yellow; background-color: black;}
+
+  40% { border-color: yellow; color: black; background-color: red;}
+
+  60% { border-color: green; color: white; background-color: blue;}
+
+  80% { border-color: blue; color: yellow; background-color: red;}
+
+
+
+
+
 }

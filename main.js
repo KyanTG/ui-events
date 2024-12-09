@@ -135,3 +135,27 @@ function BlurBlur() {
   interactionblur.classList.toggle('blur-effect')
 
   interactionblur.addEventListener('animationend', BlurBlur) }
+
+// background
+
+let interactionbackground = document.querySelector('a:nth-of-type(10)')
+
+interactionbackground.addEventListener('dblclick' , Background) 
+
+function Background() {
+
+  interactionbackground.classList.toggle('blur-effect')
+
+  interactionbackground.addEventListener('animationend', Background) }
+
+// colors
+
+let interactioncolors = document.querySelector('a:nth-of-type(11)')
+
+interactioncolors.addEventListener('click' , TwoColors) 
+
+function TwoColors() {
+
+  interactioncolors.classList.toggle('colors-effect')
+
+  interactioncolors.addEventListener('animationend', TwoColors) }
