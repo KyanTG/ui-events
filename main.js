@@ -109,3 +109,15 @@ function SizeSpinner() {
   interactionspinner.classList.toggle('spinner-effect')
 
   interactionspinner.addEventListener('animationend', SizeSpinner) }
+
+// crazy
+
+let interactioncrazy = document.querySelector('a:nth-of-type(8)')
+
+interactioncrazy.addEventListener('click' , CrazyCrazy) 
+
+function CrazyCrazy() {
+
+  interactioncrazy.classList.toggle('crazy-effect')
+
+  interactioncrazy.addEventListener('animationend', CrazyCrazy) }
