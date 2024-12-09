@@ -25,11 +25,77 @@ interaction.addEventListener('animationend', jumpHandler)
 // Ga zelf verder met de overige elementen, aan de hand van de instructies
 // Maak bijvoorbeeld een bibber animatie als je op iets klikt
 
-// Stap 1: querySelector
-// let bibberLink = document.querySelector...
+// spinner 
 
-// Stap 2: addEventListener
-// bibberLink.addEventListener...
+let interactionspin = document.querySelector('a:nth-of-type(1)')
 
-// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-// bibberLink.classList.toggle...
+interactionspin.addEventListener('click', spinY)
+
+function spinY() {
+
+  console.log(interactionspin)
+
+  interactionspin.classList.toggle('spin-effect') }
+
+  interactionspin.addEventListener('animationend', spinY)
+
+
+// size
+
+let interactionsize = document.querySelector('a:nth-of-type(2)')
+
+interactionsize.addEventListener('mouseover' , Size)
+
+interactionsize.addEventListener('mouseleave' , Size)
+
+function Size() {
+
+  interactionsize.classList.toggle('size-effect') }
+
+// bibber
+
+let interactionbibber = document.querySelector('a:nth-of-type(3)')
+
+interactionbibber.addEventListener('click' , Bibber)
+
+function Bibber() {
+
+  interactionbibber.classList.toggle('bibber-effect') }
+
+
+// updown
+
+let interactionupdown = document.querySelector('a:nth-of-type(4)')
+
+interactionupdown.addEventListener('click' , UpDown)
+
+function UpDown() {
+
+  interactionupdown.classList.toggle('up-down') } 
+
+  interactionupdown.addEventListener('animationend', UpDown)
+
+
+// disco 
+
+let interactiondisco = document.querySelector('a:nth-of-type(5)')
+
+interactiondisco.addEventListener('mouseleave' , Disco) 
+
+function Disco() {
+
+  interactiondisco.classList.toggle('disco-effect')
+
+  interactiondisco.addEventListener('animationend', Disco) }
+
+// border-size
+
+let interactionborder = document.querySelector('a:nth-of-type(6)')
+
+interactionborder.addEventListener('dblclick , BorderSize')
+
+function BorderSize() {
+
+  interactionborder.classList.toggle('border-size')
+
+  interactionborder.addEventListener('animationend', BorderSize) }

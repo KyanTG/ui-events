@@ -8,9 +8,11 @@
   --pill: 2rem;
   --line: 0.1rem;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 2rem;
   padding: 0;
@@ -18,9 +20,11 @@ body {
   font-size: 2rem;
   background: var(--secondary);
 }
+
 section {
   max-width: 90vw;
 }
+
 a {
   display: inline-block;
   margin: 0.2em;
@@ -31,7 +35,9 @@ a {
   border-radius: var(--pill);
   font-weight: normal;
   text-decoration: none;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     color: var(--primary);
     border-color: var(--primary);
   }
@@ -59,21 +65,27 @@ a:nth-of-type(12) {
   0% {
     transform: scale(1, 1) translateY(0);
   }
+
   10% {
     transform: scale(1.1, 0.9) translateY(0);
   }
+
   30% {
     transform: scale(0.9, 1.1) translateY(-5rem) rotate(10deg);
   }
+
   50% {
     transform: scale(1.05, 0.95) translateY(0);
   }
+
   57% {
     transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
   }
+
   64% {
     transform: scale(1, 1) translateY(0);
   }
+
   100% {
     transform: scale(1, 1) translateY(0);
   }
@@ -81,3 +93,116 @@ a:nth-of-type(12) {
 
 
 /* Hieronder komen jouw animaties */
+
+
+.spin-effect {
+  animation-name: spin;
+  animation-duration: 0.5s;
+}
+
+@keyframes spin {
+
+  100% {
+    transform: rotateY(360deg);
+  } }
+
+.size-effect {
+  animation-name: size;
+  animation-duration: 0.5s; }
+
+  @keyframes size {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.15);
+    }
+
+    100% {
+      transform: scale(1);
+    } }
+  
+
+.bibber-effect {
+  animation: shake 0.5s infinite; }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.up-down {
+  animation-name: updown;
+  animation-duration: 1s; }
+
+@keyframes updown {
+  0% { transform: translateY(0);  }
+
+  25% { transform: translateY(-50px) rotate(0deg); } 
+
+  40% { transform: translateY(0) rotate(180deg); }
+
+  65% { transform: translateY(100px); }
+
+  100% { transform: translateY(0px) rotate(0deg); } }
+
+
+.disco-effect {
+  animation-name: disco;
+  animation-duration: 0.5s; }
+
+@keyframes disco {
+  0%, 60% { background-color: red; }
+
+  10%, 70% { background-color: blue; }
+
+  20%, 80% { background-color: yellow; }
+
+  30%, 90% { background-color: white; }
+
+  40%, 100% { background-color: darkblue; }
+
+  50% { background-color: green; } }
+
